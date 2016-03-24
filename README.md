@@ -17,16 +17,18 @@ Not entirely! They derived many of their processes from [Bjorn Sandvik's blog po
 # Let's do this
 
 ## Getting the DEM file
-There are tons of DEM files available online, specifically from the USGS. I found TONS of them on [this site](https://gisdata.mn.gov/dataset) -- their handy mapping tool got me datasets based on the location I specified, which was really nifty.
+There are tons of DEM files available online, specifically from the USGS. I found TONS of them on [this site](http://viewer.nationalmap.gov/basic/#productSearch) -- their handy mapping tool got me datasets based on the location I specified, which was really nifty.
 
-Note: The actual files are not included within the repo because the actual file is too big for GitHub. Don't forget to unzip. Here's a list of the ones I used -- 6 DEM images:
+Note: The actual files are not included within the repo because the actual file is too big for GitHub. Don't forget to unzip. Here's a list of the ones I used -- 6 DEM images (links to the raw download files below):
 
-[Link 1](ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n47w093.zip)
-[Link 2](ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n47w094.zip)
-[Link 3](ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n47w095.zip)
-[Link 4](ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n48w093.zip)
-[Link 5](ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n48w094.zip)
-[Link 6](ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n48w095.zip)
+```
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n47w093.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n47w094.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n47w095.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n48w093.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n48w094.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/1/IMG/n48w095.zip
+```
 
 # Prepping the DEM with GDAL
 Make sure you have GDAL installed (a quick ```pip install gdal``` worked just fine for me), and let's get going.

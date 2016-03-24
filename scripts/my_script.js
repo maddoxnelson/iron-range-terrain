@@ -43,7 +43,7 @@
     var manager = new WebVRManager(renderer, effect);
 
     // URL to our DEM resource
-    var terrainURL = "dem/ne_minnesota.bin";
+    var terrainURL = "dem/ne_minnesotabig.bin";
 
     // Utility to load the DEM data
     var terrainLoader = new THREE.TerrainLoader();
@@ -52,7 +52,7 @@
     var surface;
 
     // Create the plane geometry
-    var geometry = new THREE.PlaneGeometry(60, 60, 199, 199);
+    var geometry = new THREE.PlaneGeometry(300, 201, 937, 628);
 
     // The terrainLoader loads the DEM file and defines a function to be called when the file is successfully downloaded.
     terrainLoader.load(terrainURL, function(data){
@@ -63,7 +63,7 @@
         }
 
         var material = new THREE.MeshPhongMaterial({
-            map: THREE.ImageUtils.loadTexture('dem/final2.png')
+            map: THREE.ImageUtils.loadTexture('dem/ne_minnesota988.png')
         });
 
         var plane = new THREE.Mesh(geometry, material);
@@ -98,7 +98,7 @@
         controls.dragToLook = true;
 
         // Movement and roll speeds, adjust these and see what happens!
-        controls.movementSpeed = 20;
+        controls.movementSpeed = 50;
         controls.rollSpeed = Math.PI / 12;
     }
 

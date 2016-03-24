@@ -1,0 +1,15 @@
+ENVI
+description = {
+ne_minnesotabig.bin}
+samples = 300
+lines   = 300
+bands   = 1
+header offset = 0
+file type = ENVI Standard
+data type = 12
+interleave = bsq
+byte order = 0
+map info = {Geographic Lat/Lon, 1, 1, -95.0016667, 48.0016667, 0.0100111113333333, 0.00667777800000001,North America 1983}
+coordinate system string = {GEOGCS["GCS_North_American_1983",DATUM["D_North_American_1983",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.017453292519943295],VERTCS["Unknown VCS",VDATUM["Unknown"],PARAMETER["Vertical_Shift",0.0],PARAMETER["Direction",1.0],UNIT["Meter",1.0]]]}
+band names = {
+Band 1}
